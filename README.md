@@ -42,27 +42,26 @@ I performed the following actions in the cleaning phase
 This involved exploring the data to answer some questions about the Data such as;
  - Summarizing the sales data to show total sales by product, region, and month using pivot tables 
  - Use Excel formulas to calculate metrics such as average sales per product and total revenue by region.
-
+![Subscription Service](https://github.com/user-attachments/assets/f436b885-fd82-4a66-bffd-b8f62bfcc730)
 
 
 ### Data Analysis 
 This is where I queried my data 
 
+
 ```SQL
 SELECT *
-FROM [dbo].[Customer Data]
+FROM [dbo].[LITAcp Customer Data]
 ```
 To Retrieve the total sales for each product category
 
 ```SQL
-SELECT Product,SUM(Quantity) as Total_Sales
-FROM [Sale Data]
-GROUP BY Product
+SELECT Region, COUNT(CustomerID) AS Total_No_of_Customers
+FROM [LITAcp Customer Data]
+GROUP BY Region
 ```
+![Subscription trend](https://github.com/user-attachments/assets/0268047e-d002-40a9-9bd2-52db46c0a115)
+![Subscription trend 2](https://github.com/user-attachments/assets/29bd97cc-c86d-4ef8-93ed-81654a2edde0)
 
 
 ### Data Visualization
-
-
-
-
